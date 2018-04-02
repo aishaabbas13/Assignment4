@@ -1,0 +1,389 @@
+{
+	"info": {
+		"name": "Hw4",
+		"_postman_id": "7b471ccb-4515-ffa8-4ee5-4989b53a0257",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup Fail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"qwerty\",\r\n\t\"password\": \"qwerty\"\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/signup",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "signup Pass",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"qwerty\",\r\n\t\"password\": \"qwerty\"\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/signup",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "signin Pass",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"qwerty\",\r\n\t\"password\": \"qwerty\"\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/signin",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"signin"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Display ONE movie Pass",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"qwerty\",\r\n\t\"password\": \"qwerty\"\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/reviews/Iron Man",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"reviews",
+						"Iron Man"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Display ONE movie Fail(TITLE)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"qwerty\",\r\n\t\"password\": \"qwerty\"\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/reviews/Marley",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"reviews",
+						"Marley"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Display ONE movie w/reviews PASS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"qwerty\",\r\n\t\"password\": \"qwerty\"\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/reviews/Iron Man?reviews=true",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"reviews",
+						"Iron Man"
+					],
+					"query": [
+						{
+							"key": "reviews",
+							"value": "true",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "saveReview PASS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"movTitle\": \"Batman Begins\",\r\n\t\"reviewer\":\"Marie Sanchez\",\r\n\t\"quote\":\"Woowowowowowow.\",\r\n\t\"rating\": 5\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/POSTreviews",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"POSTreviews"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "saveReview Fail(TITLE)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"movTitle\": \"asdf\",\r\n\t\"reviewer\":\"Marie Sanchez\",\r\n\t\"quote\":\"Woowowowowowow.\",\r\n\t\"rating\": 5\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/POSTreviews",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"POSTreviews"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "saveReview Fail(Rating)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"movTitle\": \"Batman Begins\",\r\n\t\"reviewer\":\"Marie Sanchez\",\r\n\t\"quote\":\"Woowowowowowow.\",\r\n\t\"rating\": 10\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/POSTreviews",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"POSTreviews"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All Movies PASS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"movTitle\": \"Batman Begins\",\r\n\t\"reviewer\":\"Marie Sanchez\",\r\n\t\"quote\":\"Woowowowowowow.\",\r\n\t\"rating\": 10\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/movies",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All Movies w/All reviews PASS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzI4NGNmMDk3YjU5MDAwNDBjMWM1NiIsInVzZXJuYW1lIjoicXdlcnR5IiwiaWF0IjoxNTIyNjk3NDUxfQ.jSxBBej5skg7E2xRAALXYPUchYyGphwwVMQfyozxKlE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"movTitle\": \"Batman Begins\",\r\n\t\"reviewer\":\"Marie Sanchez\",\r\n\t\"quote\":\"Woowowowowowow.\",\r\n\t\"rating\": 10\r\n}"
+				},
+				"url": {
+					"raw": "https://murmuring-reef-63387.herokuapp.com/movies?reviews=true",
+					"protocol": "https",
+					"host": [
+						"murmuring-reef-63387",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "reviews",
+							"value": "true",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
