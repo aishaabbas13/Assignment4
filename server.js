@@ -6,7 +6,8 @@ var User = require('./Users');
 var movies = require('./movies');
 var reviews = require('./reviews');
 var jwt = require('jsonwebtoken');
-
+var cors = require('cors');
+app.use(cors());
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
